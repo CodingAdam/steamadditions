@@ -11,6 +11,8 @@ public class LangHandler extends com.gregtechceu.gtceu.data.lang.LangHandler {
 
     public static void init(RegistrateLangProvider provider) {
         initItemTooltips(provider);
+        provider.add("block.steamadditions.steam_foundry.tooltip", "Also not to be confused with the Multi-Smelter");
+        provider.add("block.steamadditions.steam_separator.tooltip", "Perfect for getting the most out of your dusts.");
     }
 
     private static void initItemTooltips(RegistrateLangProvider provider) {
