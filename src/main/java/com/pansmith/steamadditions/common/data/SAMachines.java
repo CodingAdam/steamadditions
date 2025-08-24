@@ -36,9 +36,9 @@ import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_BRONZE_BRICKS;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.FIREBOX_BRONZE;
 import static com.gregtechceu.gtceu.utils.FormattingUtil.toEnglishName;
-import static com.pansmith.steamadditions.api.registries.SARegistries.REGISTRATE;
+import static com.pansmith.steamadditions.steamadditions.REGISTRATE;
 
-@SuppressWarnings({"Convert2MethodRef", "FunctionalExpressionCanBeFolded", "unused", "DataFlowIssue"})
+@SuppressWarnings({"unused"})
 public class SAMachines {
     public final static int[] ELECTRIC_TIERS = GTValues.tiersBetween(LV, GTCEuAPI.isHighTier() ? OpV : UV);
     public final static int[] LOW_TIERS = GTValues.tiersBetween(LV, EV);

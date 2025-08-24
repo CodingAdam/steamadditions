@@ -1,7 +1,7 @@
 # This is an example mods.toml file. It contains the data relating to the loading mods.
 modLoader="javafml" #mandatory
 loaderVersion="[47,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
-license="LGPL v2.1"
+license="MIT"
 
 # A URL to refer people to when problems occur with this mod
 issueTrackerURL="https://github.com/ThePansmith/steamadditions/issues" #optional
@@ -11,7 +11,7 @@ issueTrackerURL="https://github.com/ThePansmith/steamadditions/issues" #optional
 modId="steamadditions" #mandatory
 # The version number of the mod
 #version="${version}" #mandatory
-version="1.1"
+version="1.5.1"
 # A display name for the mod
 displayName="Steam Additions" #mandatory
 logoFile="icon.png" #optional
@@ -53,6 +53,6 @@ side="BOTH"
 [[dependencies.steamadditions]]
 modId = "gtceu"
 mandatory = true
-versionRange = "[1.0.16,)"
+versionRange = "[7.1.4,)"
 ordering = "AFTER"
 side = "BOTH"
