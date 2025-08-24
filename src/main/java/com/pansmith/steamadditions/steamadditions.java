@@ -1,11 +1,11 @@
 package com.pansmith.steamadditions;
 
+import com.pansmith.steamadditions.api.registries.SARegistries;
 import com.pansmith.steamadditions.data.SADatagen;
 import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialRegistryEvent;
 import com.gregtechceu.gtceu.api.data.chemical.material.registry.MaterialRegistry;
 import com.gregtechceu.gtceu.api.machine.MachineDefinition;
-import com.gregtechceu.gtceu.config.ConfigHolder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +21,7 @@ public class steamadditions {
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 	public static MaterialRegistry MATERIAL_REGISTRY;
 
+    @SuppressWarnings("removal")
 	public steamadditions() {
 		steamadditions.init();
 		var bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -30,14 +31,12 @@ public class steamadditions {
 	}
 
 	public static void init() {
-		ConfigHolder.init(); // Forcefully init GT config because fabric doesn't allow dependents to load after dependencies
-
-		SADatagen.init();
-
+        SADatagen.init();
+        SARegistries.REGISTRATE.registerRegistrate();
 	}
 
 	public static ResourceLocation id(String path) {
-		return new ResourceLocation(MOD_ID, path);
+		return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
 	}
 
 	@SubscribeEvent
