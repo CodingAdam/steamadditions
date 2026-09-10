@@ -1,1 +1,1 @@
-Updated to GTm 1.6
+Fixed machine models not rendering correctly

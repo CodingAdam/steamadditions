@@ -1,7 +1,8 @@
 package com.pansmith.steamadditions;
 
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
-import com.pansmith.steamadditions.common.data.SAMachines;
+import com.pansmith.steamadditions.common.data.machines.SAMachines;
+import com.pansmith.steamadditions.common.data.SATabs;
 import com.pansmith.steamadditions.data.SADatagen;
 import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialRegistryEvent;
@@ -30,6 +31,7 @@ public class steamadditions {
 		bus.register(this);
 
 		bus.addGenericListener(MachineDefinition.class, this::registerMachines);
+		REGISTRATE.creativeModeTab(() -> SATabs.SA_MACHINES);
 	}
 
 	public static void init() {

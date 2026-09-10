@@ -1,4 +1,4 @@
-package com.pansmith.steamadditions.common.data;
+package com.pansmith.steamadditions.common.data.machines;
 
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.GTCEuAPI;

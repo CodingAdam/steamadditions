@@ -1,5 +1,15 @@
+buildscript {
+    repositories {
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
 plugins {
-    id 'net.neoforged.moddev.legacyforge' version '2.0.107'
+    id 'net.neoforged.moddev.legacyforge' version '2.0.91'
     id "maven-publish"
     id "idea"
     id 'java-library'
@@ -68,6 +78,7 @@ sourceSets {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven {
         name 'FirstDarkDev'
@@ -142,8 +153,13 @@ repositories {
 }
 
 dependencies {
-    modCompileOnly("mezz.jei:jei-${project.minecraft_version}-forge-api:${project.jei_version}") { transitive = false }
-    modCompileOnly("mezz.jei:jei-${project.minecraft_version}-common-api:${project.jei_version}") { transitive = false }
+    compileOnly("org.jetbrains:annotations:26.0.1")
+
+    annotationProcessor('org.spongepowered:mixin:0.8.5:processor')
+
+    modCompileOnly("mezz.jei:jei-${project.minecraft_version}-forge-api:${project.jei_version}")
+    modCompileOnly("mezz.jei:jei-${project.minecraft_version}-common-api:${project.jei_version}")
+    modRuntimeOnly("mezz.jei:jei-${project.minecraft_version}-forge:${project.jei_version}")
 
     modImplementation("com.gregtechceu.gtceu:gtceu-${project.minecraft_version}:${project.gtceu_version}") { transitive = false }
     modImplementation("com.lowdragmc.ldlib:ldlib-forge-${project.minecraft_version}:${project.ldlib_version}") { transitive = false }
