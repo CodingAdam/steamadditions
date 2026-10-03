@@ -1,7 +1,18 @@
 {
+  "block.steamadditions.frost_generator.tooltip": "The Super Suit you've been waiting for.",
+  "block.steamadditions.large_culinary_mycelial_generator": "Large Culinary Mycelial Generator",
+  "block.steamadditions.large_frosty_mycelial_generator": "Large Frosty Mycelial Generator",
+  "block.steamadditions.large_furnace_mycelial_generator": "Large Furnace Mycelial Generator",
+  "block.steamadditions.large_magma_mycelial_generator": "Large Magma Mycelial Generator",
+  "block.steamadditions.large_metallurgic_mycelial_generator": "Large Metallurgic Mycelial Generator",
   "block.steamadditions.steam_foundry": "Steam Foundry",
-  "block.steamadditions.steam_foundry.tooltip": "Also not to be confused with the Multi-Smelter",
+  "block.steamadditions.steam_foundry.tooltip": "Also not to be confused with the Multi-Smelter.",
   "block.steamadditions.steam_separator": "Steam Separator",
   "block.steamadditions.steam_separator.tooltip": "Perfect for getting the most out of your dusts.",
+  "gtceu.large_culinary_mycelial_generator_generator.tooltip": "Large Culinary Mycelial Generator",
+  "gtceu.large_frosty_mycelial_generator_generator.tooltip": "Large Frosty Mycelial Generator",
+  "gtceu.large_furnace_mycelial_generator_generator.tooltip": "Large Furnace Mycelial Generator",
+  "gtceu.large_magma_mycelial_generator_generator.tooltip": "Large Magma Mycelial Generator",
+  "gtceu.large_metallurgic_mycelial_generator_generator.tooltip": "Large Metallurgic Mycelial Generator",
   "itemGroup.steamadditions.machines": "Steam Additions"
 }

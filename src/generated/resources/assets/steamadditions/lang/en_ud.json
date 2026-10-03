@@ -1,7 +1,18 @@
 {
+  "block.steamadditions.frost_generator.tooltip": "˙ɹoɟ buıʇıɐʍ uǝǝq ǝʌ,noʎ ʇınS ɹǝdnS ǝɥ⟘",
+  "block.steamadditions.large_culinary_mycelial_generator": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ʎɹɐuıןnƆ ǝbɹɐꞀ",
+  "block.steamadditions.large_frosty_mycelial_generator": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ʎʇsoɹℲ ǝbɹɐꞀ",
+  "block.steamadditions.large_furnace_mycelial_generator": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ǝɔɐuɹnℲ ǝbɹɐꞀ",
+  "block.steamadditions.large_magma_mycelial_generator": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ɐɯbɐW ǝbɹɐꞀ",
+  "block.steamadditions.large_metallurgic_mycelial_generator": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ɔıbɹnןןɐʇǝW ǝbɹɐꞀ",
   "block.steamadditions.steam_foundry": "ʎɹpunoℲ ɯɐǝʇS",
-  "block.steamadditions.steam_foundry.tooltip": "ɹǝʇןǝɯS-ıʇןnW ǝɥʇ ɥʇıʍ pǝsnɟuoɔ ǝq oʇ ʇou osןⱯ",
+  "block.steamadditions.steam_foundry.tooltip": "˙ɹǝʇןǝɯS-ıʇןnW ǝɥʇ ɥʇıʍ pǝsnɟuoɔ ǝq oʇ ʇou osןⱯ",
   "block.steamadditions.steam_separator": "ɹoʇɐɹɐdǝS ɯɐǝʇS",
   "block.steamadditions.steam_separator.tooltip": "˙sʇsnp ɹnoʎ ɟo ʇno ʇsoɯ ǝɥʇ buıʇʇǝb ɹoɟ ʇɔǝɟɹǝԀ",
+  "gtceu.large_culinary_mycelial_generator_generator.tooltip": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ʎɹɐuıןnƆ ǝbɹɐꞀ",
+  "gtceu.large_frosty_mycelial_generator_generator.tooltip": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ʎʇsoɹℲ ǝbɹɐꞀ",
+  "gtceu.large_furnace_mycelial_generator_generator.tooltip": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ǝɔɐuɹnℲ ǝbɹɐꞀ",
+  "gtceu.large_magma_mycelial_generator_generator.tooltip": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ɐɯbɐW ǝbɹɐꞀ",
+  "gtceu.large_metallurgic_mycelial_generator_generator.tooltip": "ɹoʇɐɹǝuǝ⅁ ןɐıןǝɔʎW ɔıbɹnןןɐʇǝW ǝbɹɐꞀ",
   "itemGroup.steamadditions.machines": "suoıʇıppⱯ ɯɐǝʇS"
 }

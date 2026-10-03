@@ -1,13 +1,14 @@
 package com.pansmith.steamadditions;
 
-import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
-import com.pansmith.steamadditions.common.data.machines.SAMachines;
-import com.pansmith.steamadditions.common.data.SATabs;
-import com.pansmith.steamadditions.data.SADatagen;
 import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialRegistryEvent;
 import com.gregtechceu.gtceu.api.data.chemical.material.registry.MaterialRegistry;
 import com.gregtechceu.gtceu.api.machine.MachineDefinition;
+import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
+import com.pansmith.steamadditions.common.data.SATabs;
+import com.pansmith.steamadditions.common.data.machines.SAGenerators;
+import com.pansmith.steamadditions.common.data.machines.SAMachines;
+import com.pansmith.steamadditions.data.SADatagen;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -51,5 +52,6 @@ public class steamadditions {
 	@SubscribeEvent
 	public void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
 		SAMachines.init();
+		SAGenerators.init();
 	}
 }

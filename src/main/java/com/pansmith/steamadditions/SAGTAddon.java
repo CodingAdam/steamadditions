@@ -5,6 +5,8 @@ import com.gregtechceu.gtceu.api.addon.IGTAddon;
 import com.gregtechceu.gtceu.api.addon.events.MaterialCasingCollectionEvent;
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 import com.pansmith.steamadditions.common.data.SARecipes;
+import com.pansmith.steamadditions.data.recipe.SAGeneratorRecipes;
+import com.pansmith.steamadditions.data.recipe.SARecipeTypes;
 import net.minecraft.data.recipes.FinishedRecipe;
 
 import java.util.function.Consumer;
@@ -16,9 +18,12 @@ public class SAGTAddon implements IGTAddon {
         return steamadditions.REGISTRATE;
     }
 
+    public SAGTAddon(){
+        SARecipeTypes.init();
+    }
+
     @Override
     public void initializeAddon() {
-
     }
 
     @Override
@@ -34,5 +39,6 @@ public class SAGTAddon implements IGTAddon {
     @Override
     public void addRecipes(Consumer<FinishedRecipe> provider) {
         SARecipes.init(provider);
+        SAGeneratorRecipes.init(provider);
     }
 }

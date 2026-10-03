@@ -167,6 +167,9 @@ dependencies {
     modRuntimeOnly("io.github.llamalad7:mixinextras-forge:${project.mixinextra_version}")
     modRuntimeOnly("io.github.llamalad7:mixinextras-common:${project.mixinextra_version}")
 
+    modImplementation("com.hrznstudio:titanium:${project.minecraft_version}-${project.titanium_version}")
+    modImplementation("com.buuz135:industrial-foregoing:${project.minecraft_version}-${project.if_version}")
+
     modImplementation("com.tterrag.registrate:Registrate:${project.registrate_version}")
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.24'
