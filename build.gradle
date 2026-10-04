@@ -147,6 +147,11 @@ repositories {
     }
 
     maven {
+        name 'DVS1 Maven FS'
+        url 'https://dvs1.progwml6.com/files/maven'
+    }
+
+    maven {
         name 'Configuration'
         url 'https://repsy.io/mvn/toma/public/'
     }
@@ -166,6 +171,9 @@ dependencies {
     modImplementation("dev.toma.configuration:configuration-forge-${project.minecraft_version}:${project.configuration_version}")
     modRuntimeOnly("io.github.llamalad7:mixinextras-forge:${project.mixinextra_version}")
     modRuntimeOnly("io.github.llamalad7:mixinextras-common:${project.mixinextra_version}")
+
+    modImplementation("slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_build}")
+    modImplementation("slimeknights.tconstruct:TConstruct:${project.minecraft_version}-${project.tinkers_build}")
 
     modImplementation("com.tterrag.registrate:Registrate:${project.registrate_version}")
     // lombok

@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "gtceu:ball_casting_mold"
+  },
+  "cast_consumed": false,
+  "fluid": { "tag": "tconstruct:molten_glass",
+    "amount": 144
+  },
+  "result": {
+    "item": "gtceu:glass_tube"
+  },
+  "cooling_time": 60
+}
